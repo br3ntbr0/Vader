@@ -5,8 +5,8 @@ context('Should validate that the home page is displayed based on page title.', 
     cy.visit('http://localhost:3000')
   })
 
-  // it('Should have the correct page title', () => {
-  //   cy.find();
-  // })  
+  it('Should have the correct page title', () => {
+    cy.find();
+  })  
    
 })

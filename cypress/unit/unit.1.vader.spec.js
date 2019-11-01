@@ -5,8 +5,6 @@ context('Should validate that the server is running.', () => {
     .should((response) => {
      expect(response.status).to.eq(200)
   })
-
-
 })
 
 
