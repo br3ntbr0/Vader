@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>{{ pocTitleText }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <table>
+      <tr>
+        <td>
+           <h1>{{ pocHeaderText }}</h1>
+          <h4>{{ pocQuoteText }}</h4>
+          <img id ="{{ prjImage }}" src="/images/{{ pocImage }}"></img>
+          </br>
+        </td>
+        <td>
+          <form name="VaderPoc">
+            <input type="checkbox" value="{{}}"
+          </form>
+        </td>
+      </tr>
+   
+    </table>  
   </body>
 </html>
