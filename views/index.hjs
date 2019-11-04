@@ -3,29 +3,23 @@
   <head>
     <title>{{ pocTitleText }}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript">
-    function swapImage(){
-      var image = document.getElementById("pocImage");
-      var dropd = document.getElementById("vaderImgSwap");
-      image.src = dropd.options[dropd.selectedIndex].title;   
-    };
-    </script>
+    <script type="text/javascript" src="/javascripts/swap.js"></script>
   </head>
   <body>
     <table border="0" cellpadding="5" width="600px">
       <tr>
         <td align="left" valign="top">
            <h1>{{ pocHeaderText }}</h1>
-          <h4>{{ pocQuoteText }}</h4>
+          <h4 id="VaderQuoteText">{{ pocQuoteText }}</h4>
         </td>
         <td align="left" valign="middle">
           <h4>Choose an image:</h4>
-          <form name="VaderPoc">
+          <form name="VaderForm" id="VaderForm">
             <select id="vaderImgSwap" onChange="swapImage()" style="width: 150px">
               <option value=""></option>
-              <option value="{{pocImage1}}" title="/images/{{pocImage1}}" selected >Image One</option>
-              <option value="{{pocImage2}}" title="/images/{{pocImage2}}">Image Two</option>
-              <option value="{{pocImage3}}" title="/images/{{pocImage3}}">Image Three</option>
+              <option value="/images/{{pocImage1}}" title="{{pocImage1}}" selected >Image One</option>
+              <option value="/images/{{pocImage2}}" title="{{pocImage2}}">Image Two</option>
+              <option value="/images/{{pocImage3}}" title="{{pocImage3}}">Image Three</option>
             </select>
           </form>
         </td>
